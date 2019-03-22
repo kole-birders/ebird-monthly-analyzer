@@ -1,0 +1,5 @@
+Total Rows: 1263
+Individual Observations: 185
+Group Observation(With Duplicates): 1078
+Total Number of Group Observers: 756
+Group Observations(Without Duplicates): 197
