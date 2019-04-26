@@ -34,7 +34,8 @@ def numberOfObservations(df):
     #Group Observations
 
 
-    group_observations = df[(df['NUMBER OBSERVERS']>1)]
+    group_observations = df[(df['NUMBER OBSERVERS']>1)] 
+    group_observations = group_observations.dropna(subset=['GROUP IDENTIFIER']) # ignore group observations without group identifiers
     g_obs = pandas.DataFrame.to_csv(group_observations, sep='\t')
     g_obsf = open(metadata_folder+'all_group_observations.csv','w')
     g_obsf.write(g_obs)
